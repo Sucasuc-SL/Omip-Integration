@@ -1,7 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v7.3/.Modules/settings.schema.json",
-  "country": "us",
-  "appFolders": [],
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v7.2/settings.schema.json",
+  "country": "es",
+  "version": "26.0",
+  "appFolders": [
+    "Omip Integration"
+  ],
   "testFolders": [],
   "bcptTestFolders": []
 }
