@@ -1,5 +1,62 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "BC252_Localhost",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8080/BC252",
+            "serverInstance": "BC252",
+            "port": 7249,
+            "authentication": "Windows",
+            "usePublicURLFromServer": true,
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        }
+        ,{
+            "name": "Microsoft cloud sandbox DEVNAB",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "DEVNAB",
+            "tenant": "29924ca5-4d83-4426-a9b6-7c2bfdcaa7ec",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+            // ,"schemaUpdateMode": "ForceSync"
+        }
+        // ,{
+        //     "name": "Microsoft cloud sandbox DEVKON",
+        //     "request": "launch",
+        //     "type": "al",
+        //     "environmentType": "Sandbox",
+        //     "environmentName": "DEVKON",
+        //     "tenant": "29924ca5-4d83-4426-a9b6-7c2bfdcaa7ec",
+        //     "breakOnError": "All",
+        //     "launchBrowser": true,
+        //     "enableLongRunningSqlStatements": true,
+        //     "enableSqlInformationDebugger": true
+        // }
+        ,{
+            "name": "Attach: Microsoft cloud sandbox DEVNAB",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName": "DEVNAB",
+            "tenant": "29924ca5-4d83-4426-a9b6-7c2bfdcaa7ec",
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient",
+            "userId": "NABALIA_SANDBOX"
+        }
     ]
 }

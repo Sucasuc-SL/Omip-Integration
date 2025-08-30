@@ -1,0 +1,95 @@
+{
+    "name": "Sucasuc ruleset",
+    "description": "These rules must be respected by all the AL code written within the company.",
+    "rules": [
+        {
+            "id": "AA0218",
+            "action": "None"
+        },
+        {
+            "id": "AA0215",
+            "action": "Error",
+            "justification": "Follow the style guide about the best practices for naming."
+        },
+        {
+            "id": "AA0073",
+            "action": "Error",
+            "justification": "The name of temporary variable must be prefixed with Temp."
+        },
+        {
+            "id": "AA0137",
+            "action": "Error",
+            "justification": "Do not declare variables that are unused."
+        },
+        {
+            "id": "AA0139",
+            "action": "Error",
+            "justification": "Do not assign a text to a target with smaller size."
+        },
+        {
+            "id": "AA0198",
+            "action": "Error",
+            "justification": "Do not use identical names for local and global variables."
+        },
+        {
+            "id": "AA0202",
+            "action": "Error",
+            "justification": "To avoid confusion, do not give local variables the same name as fields, methods or actions in the same scope."
+        },
+        {
+            "id": "AA0203",
+            "action": "Error",
+            "justification": "To avoid confusion, do not give methods the same name as fields or actions in the same scope."
+        },
+        {
+            "id": "AA0204",
+            "action": "Error",
+            "justification": "To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope."
+        },
+        {
+            "id": "AA0224",
+            "action": "Error",
+            "justification": "The count of option captions specified in the OptionCaption property is wrong."
+        },
+        {
+            "id": "AA0228",
+            "action": "Error",
+            "justification": "The local method must be used; otherwise removed."
+        },
+        {
+            "id": "AA0237",
+            "action": "Error",
+            "justification": "The name of non-temporary variables must not be prefixed with Temp."
+        },
+        {
+            "id": "AA0470",
+            "action": "None",
+            "justification": "Placeholders should have a comment explaining their content.(Collision with AL Language Tool Extension)"
+        },
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justification": "Manifest property is required for AppSource submission."
+        },   
+        {
+            "id": "AS0092",
+            "action": "None",
+            "justification": "The 'applicationInsightsKey' property must specify the AAD instrumentation key."
+        },
+        {
+            "id": "AS0052",
+            "action": "None",
+            "justification": "The property 'url' must be set to a valid URL. (URL for app mobile)"
+        },
+        {
+            "id": "AS0053",
+            "action": "None",
+            "justification": "The compilation target is set to 'OnPrem', but it must be set to 'Cloud' or 'Extension'"
+        },
+        {
+            "id": "AL0605",
+            "action": "Error",
+            "justification": "Use of implicit 'with' will be removed in the future'"
+        }
+    ]
+}
